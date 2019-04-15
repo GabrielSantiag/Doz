@@ -1,0 +1,263 @@
+<html>
+<head>
+<title>
+Testando
+</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#"><div class="block" align="center"><img src="imagens/logo.png" style="height:8vh"> </div> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Principal<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Carros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Negociar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Venda</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+	<ul class="navbar-nav mr-auto">
+	
+      <input class="form-control mr-sm-2" type="text" placeholder="Digite o modelo de veiculo">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+        </ul>
+    </form>
+
+  </div>
+
+</nav>
+
+
+<div class="col-lg-11" style="padding-left:10vw;padding-top:10vh ">
+
+<div class="card bg-light mb-3">
+    <table>
+    <tbody>
+    <td>
+        <div class="card-body" >
+            <h4 class="card-title" >Alugue seu carro </h4>
+            <p class="card-text">Verifique os modelos de veiculos que possuimos a sua disposição</p>
+            <a href="#" class="btn btn-success" style="width:45%">Verifique nosso acervo de carros</a>
+        </div>
+        </td>
+        <td align="right" style="padding-right: 1vw;padding-top: 1vh; padding-bottom: 1vh">
+        <img src="imagens/Voyage.JPG" style="height:20vh ; width:20vw auto;border-radius: 10px" >
+        </td> 
+        </tbody>
+    </table>
+</div>
+
+<div class="card bg-light mb-3"  >
+    <table>
+    <tbody>
+    <td>
+  <div class="card-body">
+    <h4 class="card-title">Negocie</h4>
+        
+    	<p class="card-text">Negocie parcelas, e verifique suas pendências</p>
+    	<a href="#" class="btn btn-success" style="width:45%">Verifique suas parcelas pendentes</a>
+	
+  </div>
+        </td>
+        <td align="right" style="padding-right: 1vw;padding-top: 1vh; padding-bottom: 1vh">
+        <img src="imagens/negocios.jpg" style="height:20vh ; width:20vw auto;border-radius: 10px" >
+        </td> 
+        </tbody>
+    </table>
+</div>
+    <div class="card bg-light mb-3" >
+    <table>
+    <tbody>
+    <td>
+  <div class="card-body">
+    <h4 class="card-title">Venda seu carro</h4>
+    
+    	<p class="card-text">Compramos seu carro, mesmo financiado e com parcelas atrasadas</p>
+    	<a href="#" class="btn btn-success" style="width:45%">Venda</a>
+	
+  </div>
+    </td>
+        <td align="right" style="padding-right: 1vw;padding-top: 1vh; padding-bottom: 1vh">
+        <img src="imagens/mapa.png" style="height:20vh ; width:20vw auto;border-radius: 10px" >
+        </td> 
+        </tbody>
+    </table>
+</div>
+</div>
+
+    
+<div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-hidden="true" style="padding-top:20vh">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" >Iniciar Sessão</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    
+                    <div class="modal-body" id="modalLog">
+                        <form id="formLog">
+                            <div class="form-group" >
+                                <label for="CPF">CPF</label>
+                                <input data-mask="000.000.000-00"type="cpf" class="form-control" id="CPF" placeholder="Digite seu CPF" maxlength="14">
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button class="btn btn-primary" id="login">Iniciar Sessão</button>                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="ModalCadastrar" tabindex="-1" role="dialog" aria-hidden="true" style="" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cadastre-se</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <div class="modal-body" id="modalCad">
+                            <form id="formCad">
+                    
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                            </div>
+                            <div class="form-group" >
+                                <label for="CPFCad">CPF</label>
+                                <input data-mask="000.000.000-00" type="text" class="form-control" id="CPFCad" placeholder="Digite seu CPF" autocomplete="off" maxlength="14" required>
+                            </div>
+                            <div class="form-group" >
+                                <label for="email">Endereço de Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="exemplo@exemplo.ex" title="Insira um endereÃ§o de email valido" required >
+                            </div>
+                            <div class="form-group">
+                                <label for="senhaCad">Senha</label>
+                                <input type="password" class="form-control" id="senhaCad" placeholder="Digite sua senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmarSenha">Confirmar Senha</label>
+                                <input type="password" class="form-control" id="confirmarSenha" placeholder="Repita sua senha">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button class="btn btn-primary" id="cad">Cadastre-se</button>                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  
+</body>
+    <!-- Footer -->
+<footer class="page-footer font-small blue pt-4 bg-light" >
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Rig Transporte</h5>
+          <p>Nosso fone de contato: </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links 
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+
+          </div>
+          
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+
+          </div>-->
+          <!-- Grid column -->
+          </div>
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+        
+    
+  </footer>
+  <!-- Footer -->
+</html>

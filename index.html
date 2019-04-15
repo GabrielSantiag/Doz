@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>
+Testando
+</title>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div style="position:fixed;width:100%;height: 100% ;z-index: 2;top: 0; left: 0;right: 0;bottom: 0;">
+                <table width="100%">
+        <tbody>
+            <td align="left" style="padding-left: 1%; padding-top: 1%;width: 70%">
+                <img src="imagens/logo.png" style="width: 6vw; height: auto ;display: block" >
+                <img src="imagens/textoRig.png" style="width: 6vw; height: auto; display: block">
+                <img src="imagens/textoTransporte.png" style="width: 6vw; height: auto  display: block">
+            </td>
+            <td align="right" valign="top" style=" padding-top: 2%;width: 20%">
+                <button class="btn"data-toggle="modal" data-target="#ModalLogin" style="color: white;border-radius:5px;background-color: green;opacity: 0.8;text-align: center; border: 2px solid #000">Iniciar Sessão</button>
+            </td>
+            <td align="right"valign="top" style="padding-right: 2%; padding-top: 2%">
+                <button class="btn"data-toggle="modal" data-target="#ModalCadastrar" style="color: white; border-radius:5px;background-color: green;opacity: 0.8;text-align: center; border: 2px solid #000">Cadastre-se</button>
+
+            </td>
+        </tbody >
+    </table>
+
+   
+    <div class="col-lg-12"style="padding-top:30vh;padding-left: 70vw">
+        <div class="card" style="background: black;opacity: 0.8;align:right;border: 2px solid white">
+            <div class="card-body" style="opacity: 1">
+        <h1 class="card-title" style="color: white ;font-family:Times new roman,times,serif;font-size:50px;opacity: 1.7">Venha Negociar!
+        </h1>
+            <p class ='card-text'style="color:white; font-family:Times new roman,times,serif; font-size:25px;opacity: 1.7" >
+                • Compramos seu carro<br> 
+                • Financiado mesmo com prestações atrasadas<br>
+                • Alugamos veículos para condutores de aplicativos<br>
+            </p>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <div id="demo" class="carousel slide" data-ride="carousel" style="size: 100vw 100vh">
+
+        <!-- Indicators -->
+        <!--<ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+        </ul>-->
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image:url(imagens/Voyage.JPG); background-repeat:no-repeat; background-size: 100vw 100vh;width: 100vw; height:100vh">
+            </div>
+            <div class="carousel-item" style="background-image:url(imagens/etios.jpg); background-repeat:no-repeat; background-size: 100vw 100vh;width: 100vw; height:100vh">
+                
+    </div>
+            
+            <div class="carousel-item" style="background-image:url(imagens/hb20.jpg); background-repeat:no-repeat; background-size: 100vw 100vh; width: 100vw; height:100vh">
+                
+            </div>
+            
+            <div class="carousel-item" style="background-image:url(imagens/onix.jpg); background-repeat:no-repeat; background-size: 100vw 100vh;width: 100vw; height:100vh">
+                
+            </div>
+                
+            <div class="carousel-item" style="background-image:url(imagens/gol.jpg); background-repeat:no-repeat; background-size: 100vw 100vh;width: 100vw; height:100vh">
+                
+        </div>
+
+    </div>
+    
+    
+    
+<div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-hidden="true" style="padding-top:20vh">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" >Iniciar Sessão</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    
+                    <div class="modal-body" id="modalLog">
+                        <form id="formLog">
+                            <div class="form-group" >
+                                <label for="CPF">CPF</label>
+                                <input data-mask="000.000.000-00"type="cpf" class="form-control" id="CPF" placeholder="Digite seu CPF" maxlength="14">
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button class="btn btn-primary" id="login">Iniciar Sessão</button>                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="ModalCadastrar" tabindex="-1" role="dialog" aria-hidden="true" style="" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cadastre-se</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <div class="modal-body" id="modalCad">
+                            <form id="formCad">
+                    
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                            </div>
+                            <div class="form-group" >
+                                <label for="CPFCad">CPF</label>
+                                <input data-mask="000.000.000-00" type="text" class="form-control" id="CPFCad" placeholder="Digite seu CPF" autocomplete="off" maxlength="14" required>
+                            </div>
+                            <div class="form-group" >
+                                <label for="email">Endereço de Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="exemplo@exemplo.ex" title="Insira um endereÃ§o de email valido" required >
+                            </div>
+                            <div class="form-group">
+                                <label for="senhaCad">Senha</label>
+                                <input type="password" class="form-control" id="senhaCad" placeholder="Digite sua senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmarSenha">Confirmar Senha</label>
+                                <input type="password" class="form-control" id="confirmarSenha" placeholder="Repita sua senha">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button class="btn btn-primary" id="cad">Cadastre-se</button>                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
